@@ -8,6 +8,10 @@ content:
     branches: main
     start_path: docs
     edit_url: false
+  - url: https://github.com/hexsorcerer/gh-pages-guides.git
+    branches: main
+    start_path: docs
+    edit_url: false
 asciidoc:
   attributes:
     experimental: ''
