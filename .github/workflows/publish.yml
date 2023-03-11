@@ -21,7 +21,7 @@ jobs:
     - name: Publish to hexsorcerer.github.io
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.PUBLISH_TOKEN }}
+        personal_token: ${{ secrets.PUBLISH_TOKEN }}
         external_repository: hexsorcerer/hexsorcerer.github.io
         publish_dir: ./public
         publish_branch: main
