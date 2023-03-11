@@ -1,0 +1,30 @@
+site:
+  title: hexsorcerer
+  url: https://hexsorcerer.github.io
+  start_page: home::index.adoc
+content:
+  sources:
+  - url: https://github.com/hexsorcerer/gh-pages-home.git
+    branches: main
+    start_path: docs
+    edit_url: false
+asciidoc:
+  attributes:
+    experimental: ''
+    idprefix: ''
+    idseparator: '-'
+    page-pagination: ''
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files:
+  - path: ui.yml
+    contents: |
+      static_files:
+      - .nojekyll
+  - path: .nojekyll
+output:
+  destinations:
+  - provider: fs
+    path: ./public
